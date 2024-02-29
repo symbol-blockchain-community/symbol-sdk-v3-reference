@@ -1,0 +1,19 @@
+{
+  "name": "symbol-sdk-v3-reference",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docdash": "^2.0.2",
+    "jsdoc": "^4.0.2"
+  }
+}

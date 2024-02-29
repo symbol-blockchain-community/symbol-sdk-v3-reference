@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Verifier - symbol sdk v3 reference</title>
+    
+    <meta name="description" content="Empowering People with Blockchain" />
+    
+        <meta name="keywords" content="symbol sdk nem xym xem blockchain web3 ブロックチェーン シンボル ネム 開発" />
+        <meta name="keyword" content="symbol sdk nem xym xem blockchain web3 ブロックチェーン シンボル ネム 開発" />
+    
+    
+    
+    <meta property="og:title" content="symbol sdk v3 reference"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="logo.png"/>
+    <meta property="og:site_name" content="symbol sdk v3 reference"/>
+    <meta property="og:url" content=""/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://myproject.com" target="_blank" class="menu-item" id="website_link" >Project Website</a></h2><h2><a href="https://myproject.com.forum" target="_blank" class="menu-item" id="forum_link" >Forum</a></h2><h3>Classes</h3><ul><li><a href="Address.html">Address</a><ul class='methods'><li data-type='method'><a href="Address.html#toString">toString</a></li><li data-type='method'><a href="Address.html#toString">toString</a></li></ul></li><li></li><li><a href="AesCbcCipher.html">AesCbcCipher</a><ul class='methods'><li data-type='method'><a href="AesCbcCipher.html#decrypt">decrypt</a></li><li data-type='method'><a href="AesCbcCipher.html#encrypt">encrypt</a></li></ul></li><li><a href="AesGcmCipher.html">AesGcmCipher</a><ul class='methods'><li data-type='method'><a href="AesGcmCipher.html#decrypt">decrypt</a></li><li data-type='method'><a href="AesGcmCipher.html#encrypt">encrypt</a></li></ul></li><li><a href="Bip32.html">Bip32</a><ul class='methods'><li data-type='method'><a href="Bip32.html#fromMnemonic">fromMnemonic</a></li><li data-type='method'><a href="Bip32.html#fromSeed">fromSeed</a></li><li data-type='method'><a href="Bip32.html#random">random</a></li></ul></li><li><a href="Bip32Node.html">Bip32Node</a><ul class='methods'><li data-type='method'><a href="Bip32Node.html#deriveOne">deriveOne</a></li><li data-type='method'><a href="Bip32Node.html#derivePath">derivePath</a></li></ul></li><li><a href="BranchNode.html">BranchNode</a><ul class='methods'><li data-type='method'><a href="BranchNode.html#calculateHash">calculateHash</a></li></ul></li><li><a href="CharacterMapBuilder.html">CharacterMapBuilder</a><ul class='methods'><li data-type='method'><a href="CharacterMapBuilder.html#addRange">addRange</a></li></ul></li><li><a href="Hash256.html">Hash256</a><ul class='methods'><li data-type='method'><a href="Hash256.html#.zero">zero</a></li></ul></li><li><a href="KeyPair.html">KeyPair</a><ul class='methods'><li data-type='method'><a href="KeyPair.html#sign">sign</a></li><li data-type='method'><a href="KeyPair.html#sign">sign</a></li></ul></li><li></li><li><a href="LeafNode.html">LeafNode</a><ul class='methods'><li data-type='method'><a href="LeafNode.html#calculateHash">calculateHash</a></li></ul></li><li><a href="MerkleHashBuilder.html">MerkleHashBuilder</a><ul class='methods'><li data-type='method'><a href="MerkleHashBuilder.html#final">final</a></li><li data-type='method'><a href="MerkleHashBuilder.html#update">update</a></li></ul></li><li><a href="Network.html">Network</a><ul class='methods'><li data-type='method'><a href="Network.html#fromDatetime">fromDatetime</a></li><li data-type='method'><a href="Network.html#isValidAddress">isValidAddress</a></li><li data-type='method'><a href="Network.html#isValidAddressString">isValidAddressString</a></li><li data-type='method'><a href="Network.html#publicKeyToAddress">publicKeyToAddress</a></li><li data-type='method'><a href="Network.html#toDatetime">toDatetime</a></li><li data-type='method'><a href="Network.html#toString">toString</a></li></ul></li><li></li><li></li><li><a href="NetworkLocator.html">NetworkLocator</a><ul class='methods'><li data-type='method'><a href="NetworkLocator.html#.findByIdentifier">findByIdentifier</a></li><li data-type='method'><a href="NetworkLocator.html#.findByName">findByName</a></li></ul></li><li><a href="NetworkTimestamp.html">NetworkTimestamp</a><ul class='methods'><li data-type='method'><a href="NetworkTimestamp.html#addHours">addHours</a></li><li data-type='method'><a href="NetworkTimestamp.html#addMilliseconds">addMilliseconds</a></li><li data-type='method'><a href="NetworkTimestamp.html#addMinutes">addMinutes</a></li><li data-type='method'><a href="NetworkTimestamp.html#addSeconds">addSeconds</a></li><li data-type='method'><a href="NetworkTimestamp.html#addSeconds">addSeconds</a></li><li data-type='method'><a href="NetworkTimestamp.html#addSeconds">addSeconds</a></li><li data-type='method'><a href="NetworkTimestamp.html#toString">toString</a></li></ul></li><li></li><li></li><li><a href="NetworkTimestampDatetimeConverter.html">NetworkTimestampDatetimeConverter</a><ul class='methods'><li data-type='method'><a href="NetworkTimestampDatetimeConverter.html#toDatetime">toDatetime</a></li><li data-type='method'><a href="NetworkTimestampDatetimeConverter.html#toDifference">toDifference</a></li></ul></li><li><a href="PatriciaMerkleProofResult.html">PatriciaMerkleProofResult</a></li><li><a href="PrivateKey.html">PrivateKey</a><ul class='methods'><li data-type='method'><a href="PrivateKey.html#.random">random</a></li></ul></li><li><a href="PublicKey.html">PublicKey</a></li><li><a href="SharedKey256.html">SharedKey256</a></li><li><a href="Signature.html">Signature</a><ul class='methods'><li data-type='method'><a href="Signature.html#.zero">zero</a></li></ul></li><li><a href="TreeNode.html">TreeNode</a><ul class='methods'><li data-type='method'><a href="TreeNode.html#calculateHash">calculateHash</a></li></ul></li><li><a href="Verifier.html">Verifier</a><ul class='methods'><li data-type='method'><a href="Verifier.html#verify">verify</a></li><li data-type='method'><a href="Verifier.html#verify">verify</a></li></ul></li><li></li><li><a href="module.exports.html">exports</a></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><h3>Global</h3><ul><li><a href="global.html#addArrayParser">addArrayParser</a></li><li><a href="global.html#addEnumParser">addEnumParser</a></li><li><a href="global.html#addFlagsParser">addFlagsParser</a></li><li><a href="global.html#addPodParser">addPodParser</a></li><li><a href="global.html#addStructParser">addStructParser</a></li><li><a href="global.html#alignUp">alignUp</a></li><li><a href="global.html#attachSignature">attachSignature</a></li><li><a href="global.html#autodetect">autodetect</a></li><li><a href="global.html#bip32NodeToKeyPair">bip32NodeToKeyPair</a></li><li><a href="global.html#bip32Path">bip32Path</a></li><li><a href="global.html#bytesToBigInt">bytesToBigInt</a></li><li><a href="global.html#bytesToBigIntUnaligned">bytesToBigIntUnaligned</a></li><li><a href="global.html#bytesToInt">bytesToInt</a></li><li><a href="global.html#bytesToIntUnaligned">bytesToIntUnaligned</a></li><li><a href="global.html#copyTo">copyTo</a></li><li><a href="global.html#cosignTransaction">cosignTransaction</a></li><li><a href="global.html#create">create</a></li><li><a href="global.html#createEmbedded">createEmbedded</a></li><li><a href="global.html#createFromFactory">createFromFactory</a></li><li><a href="global.html#decode">decode</a></li><li><a href="global.html#deepCompare">deepCompare</a></li><li><a href="global.html#deriveSharedKey">deriveSharedKey</a></li><li><a href="global.html#deriveSharedKeyDeprecated">deriveSharedKeyDeprecated</a></li><li><a href="global.html#deriveSharedKeyFactory">deriveSharedKeyFactory</a></li><li><a href="global.html#deriveSharedSecretFactory">deriveSharedSecretFactory</a></li><li><a href="global.html#deserializePatriciaTreeNodes">deserializePatriciaTreeNodes</a></li><li><a href="global.html#encode">encode</a></li><li><a href="global.html#encodeDeprecated">encodeDeprecated</a></li><li><a href="global.html#encodePersistentHarvestingDelegation">encodePersistentHarvestingDelegation</a></li><li><a href="global.html#generate">generate</a></li><li><a href="global.html#generateMosaicAliasId">generateMosaicAliasId</a></li><li><a href="global.html#generateMosaicId">generateMosaicId</a></li><li><a href="global.html#generateNamespaceId">generateNamespaceId</a></li><li><a href="global.html#generateNamespacePath">generateNamespacePath</a></li><li><a href="global.html#hashEmbeddedTransactions">hashEmbeddedTransactions</a></li><li><a href="global.html#hashTransaction">hashTransaction</a></li><li><a href="global.html#hexToUint8">hexToUint8</a></li><li><a href="global.html#intToBytes">intToBytes</a></li><li><a href="global.html#isHexString">isHexString</a></li><li><a href="global.html#isValidNamespaceName">isValidNamespaceName</a></li><li><a href="global.html#lookupTransactionName">lookupTransactionName</a></li><li><a href="global.html#lookupValue">lookupValue</a></li><li><a href="global.html#merklePath%255Bundefined%255D">merklePath[undefined]</a></li><li><a href="global.html#metadataUpdateValue">metadataUpdateValue</a></li><li><a href="global.html#proveMerkle">proveMerkle</a></li><li><a href="global.html#provePatriciaMerkle">provePatriciaMerkle</a></li><li><a href="global.html#publicKey">publicKey</a></li><li><a href="global.html#readArray">readArray</a></li><li><a href="global.html#readArrayCount">readArrayCount</a></li><li><a href="global.html#readVariableSizeElements">readVariableSizeElements</a></li><li><a href="global.html#ripemdKeccak256">ripemdKeccak256</a></li><li><a href="global.html#ruleNames">ruleNames</a></li><li><a href="global.html#setTypeHints">setTypeHints</a></li><li><a href="global.html#shiftRight">shiftRight</a></li><li><a href="global.html#shrink">shrink</a></li><li><a href="global.html#signTransaction">signTransaction</a></li><li><a href="global.html#size">size</a></li><li><a href="global.html#toByte">toByte</a></li><li><a href="global.html#toNonVerifiableTransaction">toNonVerifiableTransaction</a></li><li><a href="global.html#toString">toString</a></li><li><a href="global.html#tryDecode">tryDecode</a></li><li><a href="global.html#tryDecodeDeprecated">tryDecodeDeprecated</a></li><li><a href="global.html#tryParseUint">tryParseUint</a></li><li><a href="global.html#uint8ToHex">uint8ToHex</a></li><li><a href="global.html#verifyTransaction">verifyTransaction</a></li><li><a href="global.html#window">window</a></li><li><a href="global.html#write">write</a></li><li><a href="global.html#writeArray">writeArray</a></li><li><a href="global.html#writeArrayCount">writeArrayCount</a></li><li><a href="global.html#writeVariableSizeElements">writeVariableSizeElements</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Verifier</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            Verifier
+        
+        </h2>
+        
+            <div class="class-description usertext"><p>Verifies signatures signed by a single key pair.</p></div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Verifier"><span class="type-signature"></span>new Verifier<span class="signature">(publicKey)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a verifier from a public key.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_KeyPair.js.html">nem/KeyPair.js</a>, <a href="nem_KeyPair.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>publicKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PublicKey.html">PublicKey</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Public key.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="Verifier.html">Verifier</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Verifier.html">Verifier</a></dt>
+            <dd></dd>
+        </dl>
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="publicKey"><span class="type-signature"></span>publicKey<span class="type-signature"> :<a href="PublicKey.html">PublicKey</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Public key used for signature verification.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_KeyPair.js.html">nem/KeyPair.js</a>, <a href="nem_KeyPair.js.html#line72">line 72</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Public key used for signature verification.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="PublicKey.html">PublicKey</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="publicKey"><span class="type-signature"></span>publicKey<span class="type-signature"> :<a href="PublicKey.html">PublicKey</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Public key used for signature verification.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_KeyPair.js.html">symbol/KeyPair.js</a>, <a href="symbol_KeyPair.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Public key used for signature verification.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="PublicKey.html">PublicKey</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="verify"><span class="type-signature"></span>verify<span class="signature">(message, signature)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Verifies a message signature.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_KeyPair.js.html">nem/KeyPair.js</a>, <a href="nem_KeyPair.js.html#line81">line 81</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Uint8Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message to verify.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signature to verify.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true if the message signature verifies.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="verify"><span class="type-signature"></span>verify<span class="signature">(message, signature)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Verifies a message signature.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_KeyPair.js.html">symbol/KeyPair.js</a>, <a href="symbol_KeyPair.js.html#line78">line 78</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Uint8Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message to verify.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signature to verify.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true if the message signature verifies.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Verifier.html">Verifier</a></span>
+        
+        
+            Verifier
+        
+        </h2>
+        
+            <div class="class-description usertext"><p>Verifies signatures signed by a single key pair.</p></div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Verifier"><span class="type-signature"></span>new Verifier<span class="signature">(publicKey)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a verifier from a public key.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_KeyPair.js.html">symbol/KeyPair.js</a>, <a href="symbol_KeyPair.js.html#line56">line 56</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>publicKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PublicKey.html">PublicKey</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Public key.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="Verifier.html">Verifier</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Verifier.html">Verifier</a></dt>
+            <dd></dd>
+        </dl>
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="publicKey"><span class="type-signature"></span>publicKey<span class="type-signature"> :<a href="PublicKey.html">PublicKey</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Public key used for signature verification.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_KeyPair.js.html">nem/KeyPair.js</a>, <a href="nem_KeyPair.js.html#line72">line 72</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Public key used for signature verification.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="PublicKey.html">PublicKey</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="publicKey"><span class="type-signature"></span>publicKey<span class="type-signature"> :<a href="PublicKey.html">PublicKey</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Public key used for signature verification.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_KeyPair.js.html">symbol/KeyPair.js</a>, <a href="symbol_KeyPair.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Public key used for signature verification.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="PublicKey.html">PublicKey</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="verify"><span class="type-signature"></span>verify<span class="signature">(message, signature)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Verifies a message signature.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_KeyPair.js.html">nem/KeyPair.js</a>, <a href="nem_KeyPair.js.html#line81">line 81</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Uint8Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message to verify.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signature to verify.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true if the message signature verifies.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="verify"><span class="type-signature"></span>verify<span class="signature">(message, signature)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Verifies a message signature.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_KeyPair.js.html">symbol/KeyPair.js</a>, <a href="symbol_KeyPair.js.html#line78">line 78</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Uint8Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message to verify.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signature to verify.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true if the message signature verifies.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Fri Mar 01 2024 00:33:38 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

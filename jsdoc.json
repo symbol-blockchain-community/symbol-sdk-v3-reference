@@ -1,0 +1,38 @@
+{
+  "tags": {
+    "allowUnknownTags": false
+  },
+  "source": {
+    "include": "./sdk",
+    "includePattern": "\\.js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "opts": {
+    "template": "node_modules/docdash",
+    "encoding": "utf8",
+    "destination": "out/",
+    "recurse": true,
+    "verbose": true
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "docdash": {
+    "openGraph": {
+      "title": "symbol sdk v3 reference",
+      "type": "website",
+      "image": "assets/logo.png",
+      "site_name": "symbol sdk v3 reference"
+    },
+    "meta": {
+      "title": "symbol sdk v3 reference",
+      "description": "Empowering People with Blockchain",
+      "keyword": "symbol sdk nem xym xem blockchain web3 ブロックチェーン シンボル ネム 開発"
+    },
+    "search": true
+  }
+}
