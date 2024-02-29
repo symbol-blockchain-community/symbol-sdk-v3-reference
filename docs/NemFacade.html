@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>NetworkLocator - symbol sdk v3 reference</title>
+    <title>NemFacade - symbol sdk v3 reference</title>
     
     <meta name="description" content="Empowering People with Blockchain" />
     
@@ -49,7 +49,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">NetworkLocator</h1>
+    <h1 class="page-title">NemFacade</h1>
     
 
     
@@ -63,11 +63,11 @@
     
         <h2>
         
-            NetworkLocator
+            NemFacade
         
         </h2>
         
-            <div class="class-description usertext"><p>Provides utility functions for finding a network.</p></div>
+            <div class="class-description usertext"><p>Facade used to interact with NEM blockchain.</p></div>
         
     
 </header>
@@ -82,7 +82,7 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="NetworkLocator"><span class="type-signature"></span>new NetworkLocator<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="NemFacade"><span class="type-signature"></span>new NemFacade<span class="signature">(network)</span><span class="type-signature"></span></h4>
 
     
 
@@ -91,11 +91,14 @@
 
 <dl class="details">
     
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a NEM facade.</p></li></ul></dd>
+    
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Network.js.html">Network.js</a>, <a href="Network.js.html#line156">line 156</a>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line28">line 28</a>
     </li></ul></dd>
     
 
@@ -140,6 +143,59 @@
 
 
 
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>network</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">NemNetwork</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>NEM network or network name.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -176,6 +232,545 @@
     
 
     
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="Address"><span class="type-signature"></span>Address<span class="type-signature"> :<a href="Address.html">Address</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Network address class type.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Network address class type.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="Address.html">Address</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="BIP32_CURVE_NAME"><span class="type-signature"></span>BIP32_CURVE_NAME<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>BIP32 curve name.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line33">line 33</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>BIP32 curve name.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="KeyPair"><span class="type-signature"></span>KeyPair<span class="type-signature"> :<a href="KeyPair.html">KeyPair</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Network key pair class type.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Network key pair class type.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="KeyPair.html">KeyPair</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Verifier"><span class="type-signature"></span>Verifier<span class="type-signature"> :<a href="Verifier.html">Verifier</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Network verifier class type.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line51">line 51</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Network verifier class type.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="Verifier.html">Verifier</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="deriveSharedKey"><span class="type-signature"></span>deriveSharedKey<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Derives shared key from key pair and other party's public key.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Derives shared key from key pair and other party's public key.</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="network"><span class="type-signature"></span>network<span class="type-signature"> :NemNetwork</span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Underlying network.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line70">line 70</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Underlying network.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">NemNetwork</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="transactionFactory"><span class="type-signature"></span>transactionFactory<span class="type-signature"> :<a href="TransactionFactory.html">TransactionFactory</a></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Underlying transaction factory.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line79">line 79</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Underlying transaction factory.</p>
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="TransactionFactory.html">TransactionFactory</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
 
     
         <h3 class="subsection-title">Methods</h3>
@@ -185,7 +780,7 @@
 
     
 
-    <h4 class="name" id=".findByIdentifier"><span class="type-signature type-signature-static">(static) </span>findByIdentifier<span class="signature">(networks, singleOrMultipleIdentifiers)</span><span class="type-signature"> &rarr; {TNetwork}</span></h4>
+    <h4 class="name" id="bip32Path"><span class="type-signature"></span>bip32Path<span class="signature">(accountId)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
 
     
 
@@ -195,13 +790,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Finds a network with a specified identifier within a list of networks.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a network compatible BIP32 path for the specified account.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Network.js.html">Network.js</a>, <a href="Network.js.html#line180">line 180</a>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line131">line 131</a>
     </li></ul></dd>
     
 
@@ -273,39 +868,12 @@
 
         <tr>
             
-                <td class="name"><code>networks</code></td>
+                <td class="name"><code>accountId</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;TNetwork></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>List of networks to search.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>singleOrMultipleIdentifiers</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;number></span>
-|
-
 <span class="param-type">number</span>
 
 
@@ -317,7 +885,7 @@
 
             
 
-            <td class="description last"><p>Identifiers for which to search.</p></td>
+            <td class="description last"><p>Id of the account for which to generate a BIP32 path.</p></td>
         </tr>
 
     
@@ -343,7 +911,7 @@
 
         
 <div class="param-desc">
-    <p>First network with an identifier in the supplied list.</p>
+    <p>BIP32 path for the specified account.</p>
 </div>
 
 
@@ -354,7 +922,7 @@
     </dt>
     <dd>
         
-<span class="param-type">TNetwork</span>
+<span class="param-type">Array.&lt;number></span>
 
 
 
@@ -370,7 +938,7 @@
 
     
 
-    <h4 class="name" id=".findByName"><span class="type-signature type-signature-static">(static) </span>findByName<span class="signature">(networks, singleOrMultipleNames)</span><span class="type-signature"> &rarr; {TNetwork}</span></h4>
+    <h4 class="name" id="hashTransaction"><span class="type-signature"></span>hashTransaction<span class="signature">(transaction)</span><span class="type-signature"> &rarr; {<a href="Hash256.html">Hash256</a>}</span></h4>
 
     
 
@@ -380,13 +948,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Finds a network with a specified name within a list of networks.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Hashes a NEM transaction.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Network.js.html">Network.js</a>, <a href="Network.js.html#line164">line 164</a>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line89">line 89</a>
     </li></ul></dd>
     
 
@@ -458,13 +1026,13 @@
 
         <tr>
             
-                <td class="name"><code>networks</code></td>
+                <td class="name"><code>transaction</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;TNetwork></span>
+<span class="param-type">nc.Transaction</span>
 
 
 
@@ -475,34 +1043,7 @@
 
             
 
-            <td class="description last"><p>List of networks to search.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>singleOrMultipleNames</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;string></span>
-|
-
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Names for which to search.</p></td>
+            <td class="description last"><p>Transaction object.</p></td>
         </tr>
 
     
@@ -528,7 +1069,7 @@
 
         
 <div class="param-desc">
-    <p>First network with a name in the supplied list.</p>
+    <p>Transaction hash.</p>
 </div>
 
 
@@ -539,7 +1080,529 @@
     </dt>
     <dd>
         
-<span class="param-type">TNetwork</span>
+<span class="param-type"><a href="Hash256.html">Hash256</a></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="signTransaction"><span class="type-signature"></span>signTransaction<span class="signature">(keyPair, transaction)</span><span class="type-signature"> &rarr; {<a href="Signature.html">Signature</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Signs a NEM transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>keyPair</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="KeyPair.html">KeyPair</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Key pair.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>transaction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">nc.Transaction</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Transaction signature.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="verifyTransaction"><span class="type-signature"></span>verifyTransaction<span class="signature">(transaction, signature)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Verifies a NEM transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line115">line 115</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transaction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">nc.Transaction</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction object.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signature to verify.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>\c true if transaction signature is verified.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".bip32NodeToKeyPair"><span class="type-signature type-signature-static">(static) </span>bip32NodeToKeyPair<span class="signature">(bip32Node)</span><span class="type-signature"> &rarr; {<a href="KeyPair.html">KeyPair</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Derives a NEM KeyPair from a BIP32 node.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="facade_NemFacade.js.html">facade/NemFacade.js</a>, <a href="facade_NemFacade.js.html#line140">line 140</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bip32Node</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Bip32Node.html">Bip32Node</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>BIP32 node.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Derived key pair.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="KeyPair.html">KeyPair</a></span>
 
 
 

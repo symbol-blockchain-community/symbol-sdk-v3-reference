@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>NetworkTimestamp - symbol sdk v3 reference</title>
+    <title>TransactionFactory - symbol sdk v3 reference</title>
     
     <meta name="description" content="Empowering People with Blockchain" />
     
@@ -49,7 +49,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">NetworkTimestamp</h1>
+    <h1 class="page-title">TransactionFactory</h1>
     
 
     
@@ -63,11 +63,11 @@
     
         <h2>
         
-            NetworkTimestamp
+            TransactionFactory
         
         </h2>
         
-            <div class="class-description usertext"><p>Represents a network timestamp.</p></div>
+            <div class="class-description usertext"><p>Factory for creating NEM transactions.</p></div>
         
     
 </header>
@@ -82,7 +82,7 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="NetworkTimestamp"><span class="type-signature"></span>new NetworkTimestamp<span class="signature">(timestamp)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="TransactionFactory"><span class="type-signature"></span>new TransactionFactory<span class="signature">(network, typeRuleOverrides)</span><span class="type-signature"></span></h4>
 
     
 
@@ -92,13 +92,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Creates a timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a factory for the specified network.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line4">line 4</a>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line23">line 23</a>
     </li></ul></dd>
     
 
@@ -170,16 +170,13 @@
 
         <tr>
             
-                <td class="name"><code>timestamp</code></td>
+                <td class="name"><code>network</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type"><a href="Network.html">Network</a></span>
 
 
 
@@ -190,7 +187,34 @@
 
             
 
-            <td class="description last"><p>Raw network timestamp.</p></td>
+            <td class="description last"><p>NEM network.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeRuleOverrides</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Map.&lt;string, function()></span>
+|
+
+<span class="param-type">undefined</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Type rule overrides.</p></td>
         </tr>
 
     
@@ -224,13 +248,6 @@
     
 
     
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="NetworkTimestamp.html">NetworkTimestamp</a></dt>
-            <dd></dd>
-        </dl>
-    
     
     
 
@@ -243,7 +260,7 @@
 
         
             
-<h4 class="name" id="isEpochal"><span class="type-signature"></span>isEpochal<span class="type-signature"></span></h4>
+<h4 class="name" id="ruleNames"><span class="type-signature"></span>ruleNames<span class="type-signature"></span></h4>
 
 
 
@@ -252,13 +269,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Determines if this is the epochal timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Gets rule names with registered hints.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line20">line 20</a>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line44">line 44</a>
     </li></ul></dd>
     
 
@@ -298,7 +315,7 @@
 
 
 <div class="description usertext">
-    <p>Determines if this is the epochal timestamp.</p>
+    <p>Gets rule names with registered hints.</p>
 </div>
 
 
@@ -310,7 +327,7 @@
 
         
             
-<h4 class="name" id="timestamp"><span class="type-signature"></span>timestamp<span class="type-signature"> :bigint</span></h4>
+<h4 class="name" id="ruleNames"><span class="type-signature"></span>ruleNames<span class="type-signature"></span></h4>
 
 
 
@@ -319,13 +336,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Underlying timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Gets rule names with registered hints.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line14">line 14</a>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line45">line 45</a>
     </li></ul></dd>
     
 
@@ -365,21 +382,10 @@
 
 
 <div class="description usertext">
-    <p>Underlying timestamp.</p>
+    <p>Gets rule names with registered hints.</p>
 </div>
 
 
-
-    <h5 class="h5-types">Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">bigint</span>
-
-
-
-        </li>
-    </ul>
 
 
 
@@ -397,7 +403,7 @@
 
     
 
-    <h4 class="name" id="addHours"><span class="type-signature"></span>addHours<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(transactionDescriptor, autosort)</span><span class="type-signature"> &rarr; {nc.Transaction}</span></h4>
 
     
 
@@ -407,13 +413,598 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of hours to this timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a transaction from a transaction descriptor.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line48">line 48</a>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line65">line 65</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionDescriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Transaction descriptor.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autosort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>When set (default), descriptor arrays requiring ordering will be automatically sorted.
+When unset, descriptor arrays will be presumed to be already sorted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Newly created transaction.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">nc.Transaction</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(transactionDescriptor, autosort)</span><span class="type-signature"> &rarr; {sc.Transaction}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a transaction from a transaction descriptor.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionDescriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Transaction descriptor.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autosort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>When set (default), descriptor arrays requiring ordering will be automatically sorted.
+When unset, descriptor arrays will be presumed to be already sorted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Newly created transaction.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">sc.Transaction</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createEmbedded"><span class="type-signature"></span>createEmbedded<span class="signature">(transactionDescriptor, autosort)</span><span class="type-signature"> &rarr; {sc.EmbeddedTransaction}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates an embedded transaction from a transaction descriptor.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line108">line 108</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionDescriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Transaction descriptor.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autosort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>When set (default), descriptor arrays requiring ordering will be automatically sorted.
+When unset, descriptor arrays will be presumed to be already sorted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Newly created transaction.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">sc.EmbeddedTransaction</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".attachSignature"><span class="type-signature type-signature-static">(static) </span>attachSignature<span class="signature">(transaction, signature)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Attaches a signature to a transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line110">line 110</a>
     </li></ul></dd>
     
 
@@ -485,16 +1076,13 @@
 
         <tr>
             
-                <td class="name"><code>count</code></td>
+                <td class="name"><code>transaction</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type">nc.Transaction</span>
 
 
 
@@ -505,157 +1093,20 @@
 
             
 
-            <td class="description last"><p>Number of hours to add.</p></td>
+            <td class="description last"><p>Transaction object.</p></td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of hours past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addMilliseconds"><span class="type-signature"></span>addMilliseconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of milliseconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>count</code></td>
+                <td class="name"><code>signature</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type"><a href="Signature.html">Signature</a></span>
 
 
 
@@ -666,7 +1117,7 @@
 
             
 
-            <td class="description last"><p>Number of milliseconds to add.</p></td>
+            <td class="description last"><p>Signature to attach.</p></td>
         </tr>
 
     
@@ -692,756 +1143,7 @@
 
         
 <div class="param-desc">
-    <p>New timestamp that is the specified number of milliseconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addMinutes"><span class="type-signature"></span>addMinutes<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of minutes to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line39">line 39</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of minutes to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of minutes past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature type-signature-abstract">(abstract) </span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line30">line 30</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature"></span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="nem_Network.js.html">nem/Network.js</a>, <a href="nem_Network.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature"></span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line27">line 27</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="toString"><span class="type-signature"></span>toString<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Returns string representation of this object.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line56">line 56</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>String representation of this object</p>
+    <p>JSON transaction payload.</p>
 </div>
 
 
@@ -1453,6 +1155,713 @@
     <dd>
         
 <span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".attachSignature"><span class="type-signature type-signature-static">(static) </span>attachSignature<span class="signature">(transaction, signature)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Attaches a signature to a transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line118">line 118</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transaction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">sc.Transaction</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction object.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signature</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Signature.html">Signature</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signature to attach.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>JSON transaction payload.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".lookupTransactionName"><span class="type-signature type-signature-static">(static) </span>lookupTransactionName<span class="signature">(transactionType, transactionVersion)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Looks up the friendly name for the specified transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">nc.TransactionType</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction version.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Transaction friendly name.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".lookupTransactionName"><span class="type-signature type-signature-static">(static) </span>lookupTransactionName<span class="signature">(transactionType, transactionVersion)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Looks up the friendly name for the specified transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line55">line 55</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">sc.TransactionType</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction version.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Transaction friendly name.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toNonVerifiableTransaction"><span class="type-signature type-signature-static">(static) </span>toNonVerifiableTransaction<span class="signature">(transaction)</span><span class="type-signature"> &rarr; {nc.NonVerifiableTransaction}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Converts a transaction to a non-verifiable transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transaction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">nc.Transaction</span>
+|
+
+<span class="param-type">nc.NonVerifiableTransaction</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Non-verifiable transaction object.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">nc.NonVerifiableTransaction</span>
 
 
 
@@ -1485,11 +1894,11 @@
     
         <h2>
         
-            NetworkTimestamp
+            TransactionFactory
         
         </h2>
         
-            <div class="class-description usertext"><p>Represents a NEM network timestamp with second resolution.</p></div>
+            <div class="class-description usertext"><p>Factory for creating Symbol transactions.</p></div>
         
     
 </header>
@@ -1504,7 +1913,7 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="NetworkTimestamp"><span class="type-signature"></span>new NetworkTimestamp<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="TransactionFactory"><span class="type-signature"></span>new TransactionFactory<span class="signature">(network, typeRuleOverrides)</span><span class="type-signature"></span></h4>
 
     
 
@@ -1513,11 +1922,14 @@
 
 <dl class="details">
     
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a factory for the specified network.</p></li></ul></dd>
+    
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="nem_Network.js.html">nem/Network.js</a>, <a href="nem_Network.js.html#line10">line 10</a>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line24">line 24</a>
     </li></ul></dd>
     
 
@@ -1562,6 +1974,83 @@
 
 
 
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>network</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Network.html">Network</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Symbol network.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeRuleOverrides</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Map.&lt;string, function()></span>
+|
+
+<span class="param-type">undefined</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Type rule overrides.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -1590,13 +2079,6 @@
     
 
     
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="NetworkTimestamp.html">NetworkTimestamp</a></dt>
-            <dd></dd>
-        </dl>
-    
     
     
 
@@ -1609,7 +2091,7 @@
 
         
             
-<h4 class="name" id="isEpochal"><span class="type-signature"></span>isEpochal<span class="type-signature"></span></h4>
+<h4 class="name" id="ruleNames"><span class="type-signature"></span>ruleNames<span class="type-signature"></span></h4>
 
 
 
@@ -1618,13 +2100,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Determines if this is the epochal timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Gets rule names with registered hints.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line20">line 20</a>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line44">line 44</a>
     </li></ul></dd>
     
 
@@ -1664,7 +2146,7 @@
 
 
 <div class="description usertext">
-    <p>Determines if this is the epochal timestamp.</p>
+    <p>Gets rule names with registered hints.</p>
 </div>
 
 
@@ -1676,7 +2158,7 @@
 
         
             
-<h4 class="name" id="timestamp"><span class="type-signature"></span>timestamp<span class="type-signature"> :bigint</span></h4>
+<h4 class="name" id="ruleNames"><span class="type-signature"></span>ruleNames<span class="type-signature"></span></h4>
 
 
 
@@ -1685,13 +2167,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Underlying timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Gets rule names with registered hints.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line14">line 14</a>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line45">line 45</a>
     </li></ul></dd>
     
 
@@ -1731,21 +2213,10 @@
 
 
 <div class="description usertext">
-    <p>Underlying timestamp.</p>
+    <p>Gets rule names with registered hints.</p>
 </div>
 
 
-
-    <h5 class="h5-types">Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">bigint</span>
-
-
-
-        </li>
-    </ul>
 
 
 
@@ -1763,7 +2234,7 @@
 
     
 
-    <h4 class="name" id="addHours"><span class="type-signature"></span>addHours<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(transactionDescriptor, autosort)</span><span class="type-signature"> &rarr; {nc.Transaction}</span></h4>
 
     
 
@@ -1773,13 +2244,598 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of hours to this timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a transaction from a transaction descriptor.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line48">line 48</a>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line65">line 65</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionDescriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Transaction descriptor.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autosort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>When set (default), descriptor arrays requiring ordering will be automatically sorted.
+When unset, descriptor arrays will be presumed to be already sorted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Newly created transaction.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">nc.Transaction</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(transactionDescriptor, autosort)</span><span class="type-signature"> &rarr; {sc.Transaction}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates a transaction from a transaction descriptor.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionDescriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Transaction descriptor.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autosort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>When set (default), descriptor arrays requiring ordering will be automatically sorted.
+When unset, descriptor arrays will be presumed to be already sorted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Newly created transaction.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">sc.Transaction</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createEmbedded"><span class="type-signature"></span>createEmbedded<span class="signature">(transactionDescriptor, autosort)</span><span class="type-signature"> &rarr; {sc.EmbeddedTransaction}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Creates an embedded transaction from a transaction descriptor.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line108">line 108</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionDescriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Transaction descriptor.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autosort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>When set (default), descriptor arrays requiring ordering will be automatically sorted.
+When unset, descriptor arrays will be presumed to be already sorted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Newly created transaction.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">sc.EmbeddedTransaction</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".attachSignature"><span class="type-signature type-signature-static">(static) </span>attachSignature<span class="signature">(transaction, signature)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Attaches a signature to a transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line110">line 110</a>
     </li></ul></dd>
     
 
@@ -1851,16 +2907,13 @@
 
         <tr>
             
-                <td class="name"><code>count</code></td>
+                <td class="name"><code>transaction</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type">nc.Transaction</span>
 
 
 
@@ -1871,157 +2924,20 @@
 
             
 
-            <td class="description last"><p>Number of hours to add.</p></td>
+            <td class="description last"><p>Transaction object.</p></td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of hours past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addMilliseconds"><span class="type-signature"></span>addMilliseconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of milliseconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>count</code></td>
+                <td class="name"><code>signature</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type"><a href="Signature.html">Signature</a></span>
 
 
 
@@ -2032,7 +2948,7 @@
 
             
 
-            <td class="description last"><p>Number of milliseconds to add.</p></td>
+            <td class="description last"><p>Signature to attach.</p></td>
         </tr>
 
     
@@ -2058,756 +2974,7 @@
 
         
 <div class="param-desc">
-    <p>New timestamp that is the specified number of milliseconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addMinutes"><span class="type-signature"></span>addMinutes<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of minutes to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line39">line 39</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of minutes to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of minutes past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature type-signature-abstract">(abstract) </span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line30">line 30</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature"></span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="nem_Network.js.html">nem/Network.js</a>, <a href="nem_Network.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature"></span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line27">line 27</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="toString"><span class="type-signature"></span>toString<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Returns string representation of this object.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line56">line 56</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>String representation of this object</p>
+    <p>JSON transaction payload.</p>
 </div>
 
 
@@ -2830,306 +2997,11 @@
 
 
         
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>
-        
-            NetworkTimestamp
-        
-        </h2>
-        
-            <div class="class-description usertext"><p>Represents a Symbol network timestamp with millisecond resolution.</p></div>
-        
-    
-</header>
-
-<article>
-    
-        <div class="container-overview">
-        
-            
-
-    
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="NetworkTimestamp"><span class="type-signature"></span>new NetworkTimestamp<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line11">line 11</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        </div>
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="NetworkTimestamp.html">NetworkTimestamp</a></dt>
-            <dd></dd>
-        </dl>
-    
-    
-    
-
-     
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="isEpochal"><span class="type-signature"></span>isEpochal<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Determines if this is the epochal timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line20">line 20</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description usertext">
-    <p>Determines if this is the epochal timestamp.</p>
-</div>
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="timestamp"><span class="type-signature"></span>timestamp<span class="type-signature"> :bigint</span></h4>
-
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Underlying timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line14">line 14</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description usertext">
-    <p>Underlying timestamp.</p>
-</div>
-
-
-
-    <h5 class="h5-types">Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">bigint</span>
-
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
             
 
     
 
-    <h4 class="name" id="addHours"><span class="type-signature"></span>addHours<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
+    <h4 class="name" id=".attachSignature"><span class="type-signature type-signature-static">(static) </span>attachSignature<span class="signature">(transaction, signature)</span><span class="type-signature"> &rarr; {string}</span></h4>
 
     
 
@@ -3139,13 +3011,13 @@
 <dl class="details">
     
     <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of hours to this timestamp.</p></li></ul></dd>
+    <dd class="tag-description"><ul class="dummy"><li><p>Attaches a signature to a transaction.</p></li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line48">line 48</a>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line118">line 118</a>
     </li></ul></dd>
     
 
@@ -3217,16 +3089,13 @@
 
         <tr>
             
-                <td class="name"><code>count</code></td>
+                <td class="name"><code>transaction</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type">sc.Transaction</span>
 
 
 
@@ -3237,157 +3106,20 @@
 
             
 
-            <td class="description last"><p>Number of hours to add.</p></td>
+            <td class="description last"><p>Transaction object.</p></td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of hours past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addMilliseconds"><span class="type-signature"></span>addMilliseconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of milliseconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>count</code></td>
+                <td class="name"><code>signature</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
+<span class="param-type"><a href="Signature.html">Signature</a></span>
 
 
 
@@ -3398,7 +3130,7 @@
 
             
 
-            <td class="description last"><p>Number of milliseconds to add.</p></td>
+            <td class="description last"><p>Signature to attach.</p></td>
         </tr>
 
     
@@ -3424,756 +3156,7 @@
 
         
 <div class="param-desc">
-    <p>New timestamp that is the specified number of milliseconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addMinutes"><span class="type-signature"></span>addMinutes<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of minutes to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line39">line 39</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of minutes to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of minutes past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature type-signature-abstract">(abstract) </span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line30">line 30</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature"></span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="nem_Network.js.html">nem/Network.js</a>, <a href="nem_Network.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="addSeconds"><span class="type-signature"></span>addSeconds<span class="signature">(count)</span><span class="type-signature"> &rarr; {<a href="NetworkTimestamp.html">NetworkTimestamp</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Adds a specified number of seconds to this timestamp.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="symbol_Network.js.html">symbol/Network.js</a>, <a href="symbol_Network.js.html#line27">line 27</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>count</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type">bigint</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Number of seconds to add.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>New timestamp that is the specified number of seconds past this timestamp.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="NetworkTimestamp.html">NetworkTimestamp</a></span>
-
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="toString"><span class="type-signature"></span>toString<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-    <dt class="tag-description">Description:</dt>
-    <dd class="tag-description"><ul class="dummy"><li><p>Returns string representation of this object.</p></li></ul></dd>
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NetworkTimestamp.js.html">NetworkTimestamp.js</a>, <a href="NetworkTimestamp.js.html#line56">line 56</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>String representation of this object</p>
+    <p>JSON transaction payload.</p>
 </div>
 
 
@@ -4185,6 +3168,531 @@
     <dd>
         
 <span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".lookupTransactionName"><span class="type-signature type-signature-static">(static) </span>lookupTransactionName<span class="signature">(transactionType, transactionVersion)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Looks up the friendly name for the specified transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">nc.TransactionType</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction version.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Transaction friendly name.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".lookupTransactionName"><span class="type-signature type-signature-static">(static) </span>lookupTransactionName<span class="signature">(transactionType, transactionVersion)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Looks up the friendly name for the specified transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="symbol_TransactionFactory.js.html">symbol/TransactionFactory.js</a>, <a href="symbol_TransactionFactory.js.html#line55">line 55</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">sc.TransactionType</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction type.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>transactionVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction version.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Transaction friendly name.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toNonVerifiableTransaction"><span class="type-signature type-signature-static">(static) </span>toNonVerifiableTransaction<span class="signature">(transaction)</span><span class="type-signature"> &rarr; {nc.NonVerifiableTransaction}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Converts a transaction to a non-verifiable transaction.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="nem_TransactionFactory.js.html">nem/TransactionFactory.js</a>, <a href="nem_TransactionFactory.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transaction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">nc.Transaction</span>
+|
+
+<span class="param-type">nc.NonVerifiableTransaction</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Transaction object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Non-verifiable transaction object.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">nc.NonVerifiableTransaction</span>
 
 
 
